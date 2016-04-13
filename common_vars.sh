@@ -120,6 +120,8 @@ function repair_wheelhouse {
     chmod -R a+rwX $out_dir
 }
 
+exists() { [[ -f $1 ]]; }
+
 WHEELHOUSE=$IO_PATH/wheelhouse${BUILD_SUFFIX}
 LIBRARIES=$IO_PATH/libraries${BUILD_SUFFIX}
 
